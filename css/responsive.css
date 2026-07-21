@@ -278,3 +278,119 @@
         padding: 15px;
     }
 }
+
+
+/* ==========================================
+   1. NAVBAR / HEADER (PAGE CONTACT)
+   ========================================== */
+@media screen and (max-width: 992px) {
+    /* Asire header la pa kouvri twòp espas sou ti ekran */
+    .page-interne header .navbar {
+        position: relative;
+        padding: 12px 5%;
+    }
+}
+
+
+/* ==========================================
+   2. SECTION HERO INTERNE ("Restons en contact / Contact")
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .hero-interne {
+        height: 250px;
+        padding: 100px 20px 0 20px;
+    }
+
+    .hero-eyebrow {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .hero-interne h1 {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-interne {
+        height: 210px;
+        padding: 85px 15px 0 15px;
+    }
+
+    .hero-interne h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* ==========================================
+   3. SECTION FORMULAIRE DE CONTACT (.form-card)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    /* Diminye padding jeneral sektyon an pou bay plis plas sou mobil */
+    section {
+        padding: 40px 15px;
+    }
+
+    .form-card {
+        padding: 25px 18px;
+        border-radius: 6px;
+    }
+
+    .form-card .section-titre {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Passer Nom ak Email sou yon sèl kolòn sou ti ekran */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-champ {
+        margin-bottom: 16px;
+    }
+
+    .form-champ input, 
+    .form-champ select, 
+    .form-champ textarea {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .form-champ textarea {
+        min-height: 100px; /* Ti kras pi kout pou l pa ankonbre mobil */
+    }
+
+    .btn-gold {
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-card {
+        padding: 20px 12px;
+    }
+
+    .form-card .eyebrow {
+        font-size: 22px;
+    }
+
+    .form-card .section-titre {
+        font-size: 20px;
+    }
+}
+
+
+/* ==========================================
+   4. FOOTER (PAGE CONTACT)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+        font-size: 11px;
+    }
+}
