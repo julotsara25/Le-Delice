@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Délice - Acceuil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
     <header>
     <nav class="navbar">
       <a href="A propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
         <ul class="onglets">
           <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="A propos.html">À propos</a></li>
@@ -116,6 +124,35 @@
       <a href="Menu.html" class="btn btn-apercu">Voir tout le menu</a>
     </div>
   </section>
+
+  <section class="reservation-section">
+  <div class="reservation-conteneur">
+
+    <div class="reservation-texte">
+      <p class="reservation-eyebrow">Envie de nous rendre visite ?</p>
+      <h2 class="reservation-titre">Réservez votre <span>table</span></h2>
+      <p class="reservation-description">
+        Vivez un moment convivial autour d'une cuisine haïtienne authentique.
+        Réservez dès maintenant votre table et laissez-nous vous accueillir comme il se doit.
+      </p>
+      <a href="Réservation.html" class="btn btn-apercu btn-reserv">Réserver une table</a>
+    </div>
+
+    <div class="reservation-infos">
+      <div class="reservation-bloc">
+        <h3>Horaires</h3>
+        <p>Lundi - Dimanche</p>
+        <p>08h00 - 22h00</p>
+      </div>
+      <div class="reservation-bloc">
+        <h3>Contact</h3>
+        <p>+509 1243 5678</p>
+        <p>contact@ledelice.ht</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <footer class="hr">
     <p>&copy; 2026 <span>Le Délice</span> — Tous droits réservés.</p> 
