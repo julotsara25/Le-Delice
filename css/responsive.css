@@ -278,3 +278,114 @@
         padding: 15px;
     }
 }
+
+/* ==========================================
+   1. NAVBAR / HEADER (PAGE INTERNE)
+   ========================================== */
+@media screen and (max-width: 992px) {
+    /* Pou header la pa kouvri twòp espas sou ti ekran */
+    .page-interne header .navbar {
+        position: relative;
+        padding: 12px 5%;
+    }
+}
+
+
+/* ==========================================
+   2. SECTION HERO INTERNE ("On vous attend / Réservation")
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .hero-interne {
+        height: 260px;
+        padding: 110px 20px 0 20px;
+    }
+
+    .hero-eyebrow {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .hero-interne h1 {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-interne {
+        height: 220px;
+        padding: 90px 15px 0 15px;
+    }
+
+    .hero-interne h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* ==========================================
+   3. SECTION FORMULAIRE DE RÉSERVATION (.form-card)
+   ========================================== */
+/* Rediksyon padding sou tout paj la pou gen plis espas sou ti ekran */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    .form-card {
+        padding: 25px 18px;
+        border-radius: 6px;
+    }
+
+    .form-card .section-titre {
+        font-size: 22px !important; /* Ajiste tit sektyon an */
+        margin-bottom: 25px;
+    }
+
+    /* Pase tout de chan yo (form-row) sou yon sèl kolòn */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-champ {
+        margin-bottom: 16px;
+    }
+
+    .form-champ input, 
+    .form-champ select, 
+    .form-champ textarea {
+        padding: 11px 14px;
+        font-size: 13px;
+    }
+
+    .btn-gold {
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-card {
+        padding: 20px 12px;
+    }
+
+    .form-card .eyebrow {
+        font-size: 22px;
+    }
+
+    .form-card .section-titre {
+        font-size: 19px !important;
+    }
+}
+
+
+/* ==========================================
+   4. FOOTER (PAGE RÉSERVATION)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+        font-size: 11px;
+    }
+}
