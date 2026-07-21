@@ -30,6 +30,77 @@
     </div>
   </section>
 
+  <section>
+    <div class="form-card">
+
+        <span class="eyebrow">Réserver une table</span>
+        <h2 class="section-titre" style="font-size:30px;">Quelques détails et c'est noté</h2>
+
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-champ">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="nom" required placeholder="EX: Pierre Daniel">
+                </div>
+
+                <div class="form-champ">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" required placeholder="EX: pierredaniel@gmail.com">
+                </div>
+            </div>
+           
+                <div class="form-champ">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+509...">
+                </div>
+
+            <div class="form-row">
+                <div class="form-champ">
+                   <label for="date">Date</label>
+                   <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-champ">
+                    <label for="heure">Heure</label>
+                    <input type="time" id="heure" name="heure" required>
+                </div>
+            </div>
+
+             <div class="form-row">
+                <div class="form-champ">
+                   <label for="invités">Nombre de personnes</label>
+                   <select name="invités" id="invités">
+                       <option value="1">1 personnes</option>
+                       <option value="2">2 personnes</option>
+                       <option value="3">3 personnes</option>
+                       <option value="4">4 personnes</option>
+                       <option value="5+">5 personnes et plus</option>
+                   </select>
+                </div>
+           
+                <div class="form-champ">
+                    <label for="occasion">Occasion</label>
+                    <select name="occasion" id="occasion">
+                       <option>Dîner ordinaire</option>
+                       <option>Anniversaire</option>
+                       <option>Célébration en famille</option>
+                       <option>Rendez-vous d'affaires</option>
+                       <option>Autre</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-champ">
+                <label for="message">Demande particulière (facultatif)</label>
+                <textarea name="message" id="message" placeholder="Allergie, préférence de table, décoration..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Confirmer la Réservation</button>
+        </form>
+    </div>
+  </section>
+
+
   <footer>
     <p>&copy; 2026 <span>Le Délice</span> — Tous droits réservés.</p> 
   </footer>
