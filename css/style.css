@@ -508,4 +508,163 @@
        border-color: #721c24;
        color: white;
     }
+<!========liesen stylecss================>
+/*=========================
+        MENU PAGE
+==========================*/
+
+:root{
+    --gold:#d4af37;
+    --gold-light:#f5d87a;
+    --black:#111;
+    --dark:#1c1c1c;
+    --white:#fff;
+    --gray:#777;
+    --bg:#f8f8f8;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --radius:16px;
+}
+
+/* MENU TABS */
+
+.menu-tabs{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.menu-tabs a{
+    text-decoration:none;
+    background:white;
+    color:var(--black);
+    padding:14px 24px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:var(--shadow);
+    transition:.4s;
+}
+
+.menu-tabs a:hover{
+    background:#d4af37;
+    color:white;
+    transform:translateY(-4px);
+}
+
+/* CATEGORY */
+
+.menu-category{
+    width:90%;
+    max-width:1100px;
+    margin:70px auto;
+}
+
+.menu-category .eyebrow{
+    color:var(--gold);
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:3px;
+}
+
+.menu-category h3{
+    font-size:38px;
+    color:#222;
+    margin:10px 0 35px;
+    position:relative;
+}
+
+.menu-category h3::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--gold);
+    margin-top:10px;
+}
+
+/* MENU ITEM */
+
+.menu-item{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+    box-shadow:var(--shadow);
+    transition:.35s;
+    gap:20px;
+}
+
+.menu-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.name{
+    font-size:22px;
+    font-weight:bold;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.desc{
+    color:#666;
+    line-height:1.7;
+}
+
+.price{
+    font-size:25px;
+    color:var(--gold);
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.tag-piquant{
+    margin-left:12px;
+    background:#b22222;
+    color:white;
+    padding:5px 12px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.page-hero{
+    height:300px;
+}
+
+.page-hero h1{
+    font-size:40px;
+}
+
+.menu-item{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.price{
+    margin-top:15px;
+}
+
+.menu-category h3{
+    font-size:30px;
+}
+
+.menu-tabs{
+    gap:10px;
+}
+
+.menu-tabs a{
+    width:100%;
+    text-align:center;
 
