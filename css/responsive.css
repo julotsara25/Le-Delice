@@ -283,7 +283,6 @@
 /* Menu*/
 @media screen and (max-width: 992px) {
 
-    /* Section Menu */
     #menu {
         padding: 40px 4%;
     }
@@ -303,7 +302,6 @@
     }
 }
 
-    /* Menu Onglets (Horizontal Scroll pou mobil) */
     .menu-tabs {
         position: sticky;
         top: 0;
@@ -331,7 +329,6 @@
         flex-shrink: 0;
     }
 
-    /* Kategori ak Plats */
     .menu-category {
         margin-bottom: 45px;
         scroll-margin-top: 70px;
@@ -346,7 +343,7 @@
         margin-bottom: 20px;
     }
 
-    /* Card Item pou chak plat */
+    
     .menu-item {
         flex-direction: column;
         align-items: flex-start;
@@ -368,7 +365,7 @@
         font-size: 15px;
         padding: 4px 10px;
     }
-}
+
 
 @media screen and (max-width: 480px) {
 
