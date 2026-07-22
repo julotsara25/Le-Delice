@@ -389,6 +389,152 @@
     footer {
         padding: 15px;
         font-size: 11px;
+
+/* Menu*/
+@media screen and (max-width: 992px) {
+
+    #menu {
+        padding: 40px 4%;
+    }
+
+    .menu-tabs {
+        top: 65px;
+        gap: 10px;
+    }
+
+    .menu-tabs a {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .menu-category h3 {
+        font-size: 30px;
+    }
+}
+
+    .menu-tabs {
+        position: sticky;
+        top: 0;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+        gap: 8px;
+        margin-bottom: 35px;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 0;
+    }
+
+    .menu-tabs::-webkit-scrollbar {
+        display: none;
+    }
+    .menu-tabs {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .menu-tabs a {
+        font-size: 11px;
+        padding: 6px 14px;
+        flex-shrink: 0;
+    }
+
+    .menu-category {
+        margin-bottom: 45px;
+        scroll-margin-top: 70px;
+    }
+
+    .menu-category .eyebrow {
+        font-size: 26px;
+    }
+
+    .menu-category h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 18px;
+    }
+
+    .menu-item .name {
+        font-size: 18px;
+    }
+
+    .menu-item .desc {
+        font-size: 13px;
+    }
+
+    .menu-item .price {
+        margin-left: 0;
+        align-self: flex-end;
+        font-size: 15px;
+        padding: 4px 10px;
+    }
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-interne h1 {
+        font-size: 26px;
+    }
+
+    .menu-category h3 {
+        font-size: 22px;
+    }
+
+    .menu-item .price {
+        align-self: font-start;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+/* ==========================================
+   RESPONSIVE DESIGN POU GALERIE
+   ========================================== */
+@media (max-width: 992px) {
+    .gallery-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .gallery-hero__content p {
+        margin: 0 auto 30px;
+    }
+
+    .gallery-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-hero__content h1 {
+        font-size: 38px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .gallery-card--wide,
+    .gallery-card--tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .gallery-cta h2 {
+        font-size: 26px;
+    }
 /*Responsive page A-propos*/
 
 /* ==========================================================================
@@ -488,3 +634,7 @@
         width: 100%; /* Le bouton prend toute la largeur sur mobile pour cliquer plus facilement */
     }
 }}}
+}
+    }
+}
+}
