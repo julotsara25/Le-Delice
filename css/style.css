@@ -710,3 +710,190 @@
     white-space: nowrap;
     margin-left: 20px;
 }
+
+
+
+/*Style pour A propos*/
+
+
+/* Structure générale des sections de la page */
+.page-interne #about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-white-bg {
+    background-color: #ffffff;
+}
+
+.dark-band {
+    background-color: #0b2240;
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header-spacing {
+    margin-bottom: 60px;
+}
+
+/* Titres et textes spécifiques */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #0b2240;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.section-title span {
+    color: #721c24;
+}
+
+.title-white-large {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.eyebrow-light {
+    color: #f0d998 !important;
+}
+
+.section-lede {
+    color: #4a4038;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 1. Section Notre Histoire (Disposition Split) */
+.split {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.split-frame {
+    position: relative;
+}
+
+.split-frame img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(11, 34, 64, 0.15);
+}
+
+/* Petit effet décoratif derrière l'image */
+.split-frame::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dfb141;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+/* 2. Section Nos Valeurs (Grille) */
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(223, 177, 65, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.35s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #dfb141;
+}
+
+.value-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.value-title {
+    font-family: 'Playfair Display', serif;
+    color: #dfb141;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.value-text {
+    color: #d7dce4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 3. Section Notre Équipe (Cards) */
+.page-interne .card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.page-interne .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(11, 34, 64, 0.18);
+}
+
+.page-interne .card img {
+    height: 28px0px; /* Un peu plus haut pour les portraits d'équipe */
+}
+
+.card-body {
+    padding: 24px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card-body h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0b2240;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* 4. Section CTA (Call to Action final) */
+.cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.cta-action {
+    display: inline-block;
+}
+
+.cta-action .btn-gold {
+    width: auto;
+    padding: 15px 40px;
+}
+
