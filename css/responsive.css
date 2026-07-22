@@ -38,7 +38,6 @@
    1. GLOBAL & MOBILE MENU / NAVBAR (HAMBURGER)
    ========================================== */
 
-/* Bouton Hamburger pi piti parapar ak ekran nòmal */
 .burger-btn {
     display: none;
     flex-direction: column;
@@ -281,6 +280,12 @@
     }
 }
 
+
+/* ==========================================
+   1. NAVBAR / HEADER (PAGE CONTACT)
+   ========================================== */
+@media screen and (max-width: 992px) {
+    /* Asire header la pa kouvri twòp espas sou ti ekran */
 /* ==========================================
    1. NAVBAR / HEADER (PAGE INTERNE)
    ========================================== */
@@ -294,16 +299,17 @@
 
 
 /* ==========================================
-   2. SECTION HERO INTERNE ("On vous attend / Réservation")
+   2. SECTION HERO INTERNE ("Restons en contact / Contact")
    ========================================== */
 @media screen and (max-width: 768px) {
     .hero-interne {
-        height: 260px;
-        padding: 110px 20px 0 20px;
-    }
+        height: 250px;
+        padding: 100px 20px 0 20px;
+  
 
     .hero-eyebrow {
         font-size: 22px;
+        margin-bottom: 8px;
         margin-bottom: 10px;
     }
 
@@ -315,6 +321,8 @@
 
 @media screen and (max-width: 480px) {
     .hero-interne {
+        height: 210px;
+        padding: 85px 15px 0 15px;
         height: 220px;
         padding: 90px 15px 0 15px;
     }
@@ -326,6 +334,10 @@
 
 
 /* ==========================================
+   3. SECTION FORMULAIRE DE CONTACT (.form-card)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    /* Diminye padding jeneral sektyon an pou bay plis plas sou mobil */
    3. SECTION FORMULAIRE DE RÉSERVATION (.form-card)
    ========================================== */
 /* Rediksyon padding sou tout paj la pou gen plis espas sou ti ekran */
@@ -340,6 +352,11 @@
     }
 
     .form-card .section-titre {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Passer Nom ak Email sou yon sèl kolòn sou ti ekran */
         font-size: 22px !important; /* Ajiste tit sektyon an */
         margin-bottom: 25px;
     }
@@ -357,6 +374,14 @@
     .form-champ input, 
     .form-champ select, 
     .form-champ textarea {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .form-champ textarea {
+        min-height: 100px; /* Ti kras pi kout pou l pa ankonbre mobil */
+    }
+
         padding: 11px 14px;
         font-size: 13px;
     }
@@ -377,6 +402,13 @@
     }
 
     .form-card .section-titre {
+        font-size: 20px;
+    }
+}
+
+
+/* ==========================================
+   4. FOOTER (PAGE CONTACT)
         font-size: 19px !important;
     }
 }
@@ -629,10 +661,11 @@
         line-height: 1.4;
     }
 
-    .cta-action, 
-    .cta-action .btn-gold {
-        width: 100%; /* Le bouton prend toute la largeur sur mobile pour cliquer plus facilement */
+    .cta-action, .cta-action .btn-gold {
+        width: 100%; 
     }
+    }
+}}
 }}}
 }
     }

@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Le Délice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/script.js"></script>
 </head>
 <body class="page-interne">
     
     <header>
      <nav class="navbar">
-        <a href="A propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+        <a href="A-propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+        
+        <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        
         <ul class="onglets">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="A propos.html">À propos</a></li>
+            <li><a href="A-propos.html">À propos</a></li>
             <li><a href="Galerie.html">Galerie</a></li>
             <li><a href="Menu.html">Menu</a></li>
             <li><a href="Contact.html"  class="active">Contact</a></li>
@@ -29,6 +38,46 @@
     <h1>Contact</h1>
     </div>
   </section>
+
+  <section>
+    <div class="form-card">
+        <p class="eyebrow">Contactez-nous</p>
+        <h2 class="section-titre">Une question, une suggestion ?</h2>
+   
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-champ">
+                    <label for="c-nom">Nom complet</label>
+                    <input type="text" id="c-nom" name="nom" required placeholder="Votre nom">
+                </div>
+
+                <div class="form-champ">
+                    <label for="c-email">Adresse email</label>
+                    <input type="email" id="c-email" name="email" required placeholder="vous@gmail.com">
+                </div>
+            </div>
+
+                <div class="form-champ">
+                    <label for="sujet">Sujet</label>
+                    <select name="sujet" id="sujet">
+                       <option>Question générale</option>
+                       <option>Réservation de groupe / événement</option>
+                       <option>Suggestion</option>
+                       <option>Partenariat</option>
+                       <option>Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-champ">
+                    <label for="c-message">Message</label>
+                    <textarea name="message" id="c-message" placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold">Envoyer le message</button>
+        </form>
+    </div>
+  </section>
+
 
    <footer>
     <p>&copy; 2026 <span>Le Délice</span> — Tous droits réservés.</p> 
