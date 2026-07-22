@@ -811,3 +811,306 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+    /*STYLE POUR  MENU*/
+
+#menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 5%;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 50px;
+    top: 70px;
+    background-color: rgba(249, 249, 249, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 20px 15px;
+    border-bottom: 2px solid rgba(223, 177, 65, 0.3);
+}
+
+.menu-tabs a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0b2240;
+    background-color: #faf5ea;
+    border: 1px solid #d9cfbe;
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+    box-shadow: 0 2px 5px rgba(11, 34, 64, 0.05);
+}
+
+.menu-tabs a:hover {
+    background-color: #dfb141;
+    color: #0b2240;
+    border-color: #dfb141;
+}
+
+.menu-category {
+    margin-bottom: 70px;
+    scroll-margin-top: 140px; /* Anpeche tit la kouvri lè ou klike sou yon tab */
+}
+
+.menu-category .eyebrow {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #721c24;
+    display: block;
+    line-height: 1;
+}
+
+.menu-category h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #0b2240;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dfb141;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 22px 28px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border-left: 4px solid #dfb141;
+    box-shadow: 0 4px 15px rgba(11, 34, 64, 0.06);
+    transition: 0.35s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+    border-left-color: #721c24;
+    box-shadow: 0 10px 25px rgba(11, 34, 64, 0.12);
+}
+
+.menu-item .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0b2240;
+    margin-bottom: 6px;
+}
+
+.menu-item .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+.menu-item .price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #721c24;
+    background-color: #faf5ea;
+    padding: 6px 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(223, 177, 65, 0.4);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+
+/*Style pour A propos*/
+
+
+/* Structure générale des sections de la page */
+.page-interne #about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-white-bg {
+    background-color: #ffffff;
+}
+
+.dark-band {
+    background-color: #0b2240;
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header-spacing {
+    margin-bottom: 60px;
+}
+
+/* Titres et textes spécifiques */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #0b2240;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.section-title span {
+    color: #721c24;
+}
+
+.title-white-large {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.eyebrow-light {
+    color: #f0d998 !important;
+}
+
+.section-lede {
+    color: #4a4038;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 1. Section Notre Histoire (Disposition Split) */
+.split {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.split-frame {
+    position: relative;
+}
+
+.split-frame img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(11, 34, 64, 0.15);
+}
+
+/* Petit effet décoratif derrière l'image */
+.split-frame::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dfb141;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+/* 2. Section Nos Valeurs (Grille) */
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(223, 177, 65, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.35s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #dfb141;
+}
+
+.value-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.value-title {
+    font-family: 'Playfair Display', serif;
+    color: #dfb141;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.value-text {
+    color: #d7dce4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 3. Section Notre Équipe (Cards) */
+.page-interne .card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.page-interne .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(11, 34, 64, 0.18);
+}
+
+.page-interne .card img {
+    height: 28px0px; /* Un peu plus haut pour les portraits d'équipe */
+}
+
+.card-body {
+    padding: 24px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card-body h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0b2240;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* 4. Section CTA (Call to Action final) */
+.cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.cta-action {
+    display: inline-block;
+}
+
+.cta-action .btn-gold {
+    width: auto;
+    padding: 15px 40px;
+}
+
