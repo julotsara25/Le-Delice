@@ -102,6 +102,8 @@
     }
 }
 
+
+
 /* ==========================================
    2. HERO SECTION
    ========================================== */
@@ -387,5 +389,102 @@
     footer {
         padding: 15px;
         font-size: 11px;
+/*Responsive page A-propos*/
+
+/* ==========================================================================
+   RESPONSIVE - PAGE À PROPOS
+   ========================================================================== */
+
+/* ─── TABLETTES (Moins de 992px) ─── */
+@media screen and (max-width: 992px) {
+    section {
+        padding: 60px 5%;
+    }
+
+    /* Ajustement du split Histoire */
+    .split {
+        grid-template-columns: 1fr; /* Passage sur une seule colonne */
+        gap: 40px;
+    }
+
+    .split-frame img {
+        height: 380px; /* Légère réduction de la hauteur de l'image */
+    }
+
+    /* Grille des valeurs et de l'équipe passe à 2 colonnes */
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* ─── PETITES TABLETTES / GRAND MOBILES (Moins de 768px) ─── */
+@media screen and (max-width: 768px) {
+    .hero-interne {
+        height: 320px;
+        padding: 160px 20px;
+    }
+
+    .hero-interne h1 {
+        font-size: 38px;
+    }
+
+    .section-title, 
+    .title-white-large {
+        font-size: 32px;
+    }
+
+    .cta-title {
+        font-size: 26px;
+    }
+    
+    /* Correction de la coquille de hauteur héritée de ta classe principale */
+    .page-interne .card img {
+        height: 280px; 
+    }
+}
+
+/* ─── MOBILES (Moins de 576px) ─── */
+@media screen and (max-width: 576px) {
+    section {
+        padding: 50px 4%;
+    }
+
+    .section-header-spacing {
+        margin-bottom: 40px;
+    }
+
+    /* Histoire */
+    .split-frame img {
+        height: 280px; /* Plus adapté aux petits écrans */
+    }
+    
+    .split-frame::before {
+        display: none; /* On retire l'effet d'encadrement doré pour éviter les débordements horizontaux */
+    }
+
+    /* Passage de toutes les grilles sur 1 seule colonne alignée */
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .value-item {
+        padding: 30px 20px;
+    }
+
+    /* Ajustement des textes et boutons */
+    .section-lede {
+        font-size: 15px;
+    }
+
+    .cta-title {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .cta-action, 
+    .cta-action .btn-gold {
+        width: 100%; /* Le bouton prend toute la largeur sur mobile pour cliquer plus facilement */
     }
 }
