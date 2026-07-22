@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Le Délice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/script.js"></script>
+</body>
 </head>
 <body class="page-interne">
     
     <header>
      <nav class="navbar">
-        <a href="A propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+        <a href="A-propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
         <ul class="onglets">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="A propos.html" class="active">À propos</a></li>
+            <li><a href="A-propos.html" class="active">À propos</a></li>
             <li><a href="Galerie.html">Galerie</a></li>
             <li><a href="Menu.html">Menu</a></li>
             <li><a href="Contact.html">Contact</a></li>
@@ -22,18 +32,91 @@
      </nav>
     </header>
 
-  <section class="hero-interne" style="background-image: url(image/contact.png);">
+  <section class="hero-interne" style="background-image: url(image/delice-exterieur.jpg);">
     <div class="hero-interne-overlay"></div>
     <div class="hero-interne-content">
-    <p class="hero-eyebrow">Restons en contact</p>
-    <h1>Contact</h1>
+    <p class="hero-eyebrow">Qui sommes-nous?</p>
+    <h1>A propos de Le Délice</h1>
     </div>
   </section>
 
   <section id="about">
 
-    --------kenley
+        <section>
+    <div class="split">
+        <div>
+            <span class="eyebrow">Notre histoire</span>
+            <h2 class="section-title">Née d'une recette, portée par une <span>famille</span></h2>
+            <p class="section-lede lede-fullwidth">Le Délice est né dans la cuisine d'une grand-mère de Jacmel, où chaque dimanche rassemblait toute la famille autour d'un griot doré et d'un riz djon djon fumant. En 2013, ce rituel familial est devenu un restaurant, avec la même mission : servir une cuisine haïtienne honnête, généreuse et fidèle à ses racines.</p>
+            <br>
+            <p class="section-lede lede-fullwidth">Aujourd'hui, notre équipe perpétue ces recettes transmises de génération en génération, tout en les présentant avec un soin nouveau. Ici, on ne sert pas seulement un repas : on partage un morceau d'Haïti.</p>
+        </div>
+        <div class="split-frame">
+            <img src="image/cuisinier.jpg" alt="Cuisinière préparant un plat traditionnel">
+        </div>
+    </div>
+</section>
 
+<section class="dark-band">
+    <div class="center section-header-spacing">
+        <span class="eyebrow eyebrow-light">Ce qui nous anime</span>
+        <h2 class="title-white-large">Nos valeurs</h2>
+    </div>
+    <div class="grid grid-3">
+        <div class="value-item">
+            <div class="value-icon">🌶️</div>
+            <h3 class="value-title">Authenticité</h3>
+            <p class="value-text">Des recettes traditionnelles respectées, sans raccourci ni compromis sur le goût.</p>
+        </div>
+        <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">Hospitalité</h3>
+            <p class="value-text">Chaque client est accueilli comme un membre de la famille, dès son arrivée.</p>
+        </div>
+        <div class="value-item">
+            <div class="value-icon">🌿</div>
+            <h3 class="value-title">Fraîcheur</h3>
+            <p class="value-text">Des produits locaux et de saison, choisis chaque matin avec exigence.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-white-bg">
+    <div class="center section-header-spacing">
+        <span class="eyebrow">Les mains derrière les plats</span>
+        <h2 class="section-title">Notre <span>équipe</span></h2>
+    </div>
+    <div class="grid grid-3">
+        <div class="card">
+            <img src="image/chef-exe.png" alt="Chef cuisinier">
+            <div class="card-body">
+                <h3>Chef Wilner</h3>
+                <p>Chef exécutif — 20 ans à sublimer la cuisine haïtienne traditionnelle.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/2rosemene.jpg" alt="Cheffe pâtissière">
+            <div class="card-body">
+                <h3>Chef Rosemène</h3>
+                <p>Cheffe pâtissière — créatrice des desserts et douceurs maison.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/souschef2.jpg" alt="Responsable de salle">
+            <div class="card-body">
+                <h3>Jean-Baptiste</h3>
+                <p>Responsable de salle — garant d'un accueil chaleureux à chaque visite.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dark-band text-center">
+    <h2 class="cta-title">Venez découvrir notre histoire... en la goûtant</h2>
+    <div class="cta-action">
+        <a href="Réservation.html" class="btn btn-gold">Réserver une table</a>
+    </div>
+</section>
   </section>
 
    <footer>
