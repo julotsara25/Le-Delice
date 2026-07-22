@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Le Délice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hello.css">
 </head>
 <body class="page-interne">
     
@@ -32,7 +33,188 @@
 
   <section id="about">
 
-    --------kenley
+    <main>
+        <section class="about-hero" aria-labelledby="about-title">
+            <div class="about-hero__content">
+                <!-- <p class="about-eyebrow">À propos de nous</p> -->
+                <h1 id="about-title">Nous servons <span class="about-title__nowrap">le <em>bonheur</em></span></h1>
+                <p class="about-lead">
+                    Au Délice, nous croyons que la bonne cuisine rapproche les gens. Nos chefs préparent chaque plat avec passion, à partir d'ingrédients frais et de recettes haïtiennes authentiques.
+                </p>
+
+                <a class="about-button" href="#notre-equipe">Voir notre-equipe <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <div class="about-hero__visual">
+                <div class="about-hero__image">
+                    <img src="image/griyo.png" alt="Griyo haïtien préparé par Le Délice" loading="eager">
+                </div>
+                <div class="experience-badge" aria-label="Plus de 10 ans d'expérience">
+                    <span class="experience-badge__icon" aria-hidden="true">♨</span>
+                    <strong>10+</strong>
+                    <span>ans d'expérience</span>
+                </div>
+            </div>
+
+            <div class="about-benefits" aria-label="Pourquoi choisir Le Délice">
+                <article class="benefit-card">
+                    <span class="benefit-card__icon" aria-hidden="true">◆</span>
+                    <h2>Ingrédients frais</h2>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-card__icon" aria-hidden="true">♛</span>
+                    <h2>Chefs passionnés</h2>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-card__icon" aria-hidden="true">⌁</span>
+                    <h2>Service rapide</h2>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-card__icon" aria-hidden="true">♥</span>
+                    <h2>Clients heureux</h2>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-values" aria-labelledby="values-title">
+            <div class="about-values__heading">
+                <p class="about-eyebrow">Ce qui nous anime</p>
+                <h2 id="values-title">Nos valeurs</h2>
+            </div>
+
+            <div class="about-values__grid">
+                <article class="value-card">
+                    <span class="value-card__number">01</span>
+                    <h3>Authenticité</h3>
+                    <p>Nous préservons l'âme des recettes haïtiennes et les transmettons avec fierté.</p>
+                </article>
+                <article class="value-card">
+                    <span class="value-card__number">02</span>
+                    <h3>Qualité</h3>
+                    <p>Nous choisissons de bons ingrédients pour offrir une cuisine fraîche et savoureuse.</p>
+                </article>
+                <article class="value-card">
+                    <span class="value-card__number">03</span>
+                    <h3>Convivialité</h3>
+                    <p>Nous accueillons chaque client comme un invité autour de notre table.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="team-section" id="notre-equipe" aria-labelledby="team-title">
+            <div class="team-heading">
+                <p class="team-eyebrow">Les visages du Délice</p>
+                <h1 id="team-title">Notre équipe</h1>
+                <p>Un collectif de passionnés qui met son talent, sa créativité et son énergie au service de chaque expérience.</p>
+            </div>
+
+            <div class="team-carousel" aria-roledescription="carousel" aria-label="Membres de notre équipe">
+                <div class="team-carousel__viewport">
+                    <div class="team-carousel__track">
+                        <article class="team-slide" aria-label="1 sur 3">
+                            <div class="team-slide__image">
+                                <img src="image/Kenley.png" alt="Portrait de Kenley Elysee">
+                            </div>
+                            <div class="team-slide__content">
+                                <p class="team-slide__role">CEO &amp; Fondateur</p>
+                                <h2>Kenley Elysee</h2>
+                                <p>Vision, leadership et passion pour faire de chaque visite au Délice une expérience mémorable.</p>
+                            </div>
+                        </article>
+
+                        <article class="team-slide" aria-label="2 sur 3">
+                            <div class="team-slide__image">
+                                <img src="image/Sara.png" alt="Portrait de Sara Julot">
+                            </div>
+                            <div class="team-slide__content">
+                                <p class="team-slide__role">Administratrice &amp; Co-fondatrice</p>
+                                <h2>Sara Julot</h2>
+                                <p>Organisation, accueil et attention aux détails pour assurer un service à la hauteur de nos clients.</p>
+                            </div>
+                        </article>
+
+                        <article class="team-slide" aria-label="3 sur 3">
+                            <div class="team-slide__image">
+                                <img src="image/marie kwizin.png" alt="Portrait de Marie Judith">
+                            </div>
+                            <div class="team-slide__content">
+                                <p class="team-slide__role">Responsable cuisine</p>
+                                <h2>Marie Judith</h2>
+                                <p>Créativité et savoir-faire au cœur de chaque assiette, dans le respect des saveurs haïtiennes.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="team-carousel__controls">
+                    <button class="team-arrow team-arrow--prev" type="button" aria-label="Membre précédent">&#8592;</button>
+                    <div class="team-dots" aria-label="Choisir un membre"></div>
+                    <button class="team-arrow team-arrow--next" type="button" aria-label="Membre suivant">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+    <script>
+        const carousel = document.querySelector('.team-carousel');
+        const track = carousel.querySelector('.team-carousel__track');
+        const slides = [...carousel.querySelectorAll('.team-slide')];
+        const dotsContainer = carousel.querySelector('.team-dots');
+        let currentSlide = 0;
+        let autoPlay;
+
+        slides.forEach((slide, index) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'team-dot';
+            dot.setAttribute('aria-label', `Afficher le membre ${index + 1}`);
+            dot.addEventListener('click', () => showSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = [...dotsContainer.children];
+
+        function showSlide(index) {
+            currentSlide = (index + slides.length) % slides.length;
+            slides.forEach((slide, i) => {
+                const previous = (currentSlide - 1 + slides.length) % slides.length;
+                const next = (currentSlide + 1) % slides.length;
+
+                slide.classList.toggle('is-active', i === currentSlide);
+                slide.classList.toggle('is-prev', i === previous);
+                slide.classList.toggle('is-next', i === next);
+                slide.setAttribute('aria-hidden', i !== currentSlide);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('is-active', i === currentSlide);
+                dot.setAttribute('aria-current', i === currentSlide ? 'true' : 'false');
+            });
+        }
+
+        function startAutoPlay() {
+            clearInterval(autoPlay);
+            autoPlay = setInterval(() => showSlide(currentSlide + 1), 5000);
+        }
+
+        carousel.querySelector('.team-arrow--prev').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+            startAutoPlay();
+        });
+
+        carousel.querySelector('.team-arrow--next').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+            startAutoPlay();
+        });
+
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        carousel.addEventListener('mouseleave', startAutoPlay);
+        carousel.addEventListener('focusin', () => clearInterval(autoPlay));
+        carousel.addEventListener('focusout', startAutoPlay);
+
+        showSlide(0);
+        startAutoPlay();
+    </script>
+    </main>
+
 
   </section>
 
