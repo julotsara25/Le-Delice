@@ -384,6 +384,49 @@
         width: 100%;
         text-align: center;
         margin-top: 5px;
+/* ==========================================
+   RESPONSIVE DESIGN POU GALERIE
+   ========================================== */
+@media (max-width: 992px) {
+    .gallery-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .gallery-hero__content p {
+        margin: 0 auto 30px;
+    }
+
+    .gallery-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-hero__content h1 {
+        font-size: 38px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .gallery-card--wide,
+    .gallery-card--tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .gallery-cta h2 {
+        font-size: 26px;
+    }
 /*Responsive page A-propos*/
 
 /* ==========================================================================
@@ -484,4 +527,5 @@
     }
 }
     }
+}
 }
