@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Le Délice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="page-interne">
     
     <header>
      <nav class="navbar">
         <a href="A propos.html"><img src="image/Le Delice logo png.png" alt="" class="logo"></a>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
         <ul class="onglets">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="A propos.html">À propos</a></li>
@@ -22,17 +30,76 @@
      </nav>
     </header>
 
-  <section class="hero-interne" style="background-image: url(image/contact.png);">
+  <section class="hero-interne" style="background-image: url(image/site-banner.png);">
     <div class="hero-interne-overlay"></div>
     <div class="hero-interne-content">
-    <p class="hero-eyebrow">Restons en contact</p>
-    <h1>Contact</h1>
+    <p class="hero-eyebrow">En images</p>
+    <h1>Galerie</h1>
     </div>
   </section>
 
   <section id="galerie">
 
-    --------kenley
+    <div class="gallery-hero">
+
+        <div class="gallery-hero__content">
+            <h1>Un festin pour<br><em>les yeux</em></h1>
+            <p>Explorez notre cuisine en images : des recettes généreuses, des produits frais et toute la chaleur de la tradition haïtienne.</p>
+            <a class="gallery-scroll" href="#nos-plats">Découvrir nos plats <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="gallery-hero__visual" aria-hidden="true">
+            <img src="image/taso.png" alt="">
+        </div>
+    </div>
+
+    <main id="nos-plats" class="gallery-main">
+        <div class="gallery-heading">
+            <div>
+                <h2>Les incontournables</h2>
+            </div>
+            <p>Chaque assiette raconte une histoire, préparée avec soin pour vous faire voyager dès la première bouchée.</p>
+        </div>
+
+        <section class="gallery-grid" aria-label="Galerie de nos plats">
+            <figure class="gallery-card gallery-card--wide">
+                <img src="image/diri djondjon.png" alt="Diri djondjon, riz noir haïtien" loading="eager">
+                <figcaption><span>01</span><div><strong>Diri Djondjon</strong><small>Riche, parfumé &amp; authentique</small></div></figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card--tall">
+                <img src="image/akra.png" alt="Akra haïtiens dorés" loading="lazy">
+                <figcaption><span>02</span><div><strong>Akra</strong><small>Croustillant &amp; savoureux</small></div></figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+                <img src="image/bannan peze.png" alt="Bananes pesées croustillantes" loading="lazy">
+                <figcaption><span>03</span><div><strong>Bannan Peze</strong><small>Le classique généreux</small></div></figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card--tall">
+                <img src="image/taso.png" alt="Tassot haïtien accompagné de légumes" loading="lazy">
+                <figcaption><span>04</span><div><strong>Tassot</strong><small>Tendre &amp; épicé</small></div></figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+                <img src="image/mayi.png" alt="Mayi moulen crémeux" loading="lazy">
+                <figcaption><span>05</span><div><strong>Mayi Moulen</strong><small>Doux &amp; réconfortant</small></div></figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card--wide">
+                <img src="image/fish-plate.png" alt="Poisson grillé à l'haïtienne" loading="lazy">
+                <figcaption><span>06</span><div><strong>Pwason Griye</strong><small>Frais, grillé &amp; parfumé</small></div></figcaption>
+            </figure>
+        </section>
+
+        <section class="gallery-cta" aria-label="Réserver une table">
+            <p class="gallery-eyebrow">L’expérience Le Délice</p>
+            <h2>Encore plus beau<br>dans votre assiette.</h2>
+            <a href="Réservation.html">Réserver une table <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
 
   </section>
 

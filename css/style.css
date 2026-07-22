@@ -592,4 +592,222 @@
        border-color: #721c24;
        color: white;
     }
+/*Galerie*/
+
+#galerie {
+    background-color: #faf5ea;
+    color: #0b2240;
+    padding-bottom: 80px;
+}
+
+.gallery-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 5% 60px;
+}
+
+.gallery-hero__content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #0b2240;
+    margin: 15px 0 20px;
+}
+
+.gallery-hero__content h1 em {
+    font-family: 'Dancing Script', cursive;
+    color: #721c24;
+    font-style: normal;
+}
+
+.gallery-hero__content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.gallery-scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0b2240;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.gallery-scroll:hover {
+    color: #721c24;
+    transform: translateY(3px);
+}
+
+.gallery-hero__visual {
+    position: relative;
+    text-align: center;
+}
+
+.gallery-hero__visual img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(11, 34, 64, 0.15);
+    object-fit: cover;
+}
+
+/* --- Section Prensipal (.gallery-main) --- */
+.gallery-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.gallery-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #dfb141;
+    padding-bottom: 20px;
+}
+
+.gallery-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #0b2240;
+}
+
+.gallery-heading p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #666;
+    max-width: 400px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.gallery-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(11, 34, 64, 0.08);
+    background-color: #0b2240;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gallery-card--wide {
+    grid-column: span 2;
+}
+
+.gallery-card--tall {
+    grid-row: span 2;
+}
+
+.gallery-card figcaption {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 34, 64, 0.9) 0%, rgba(11, 34, 64, 0.2) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 25px;
+    color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.gallery-card figcaption span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #dfb141;
+    line-height: 1;
+}
+
+.gallery-card figcaption strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.gallery-card figcaption small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #d9cfbe;
+    display: block;
+    margin-top: 2px;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-card:hover figcaption {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(11, 34, 64, 0.95) 0%, rgba(11, 34, 64, 0.4) 100%);
+}
+
+.gallery-cta {
+    background-color: #0b2240;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(11, 34, 64, 0.2);
+}
+
+.gallery-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin: 10px 0 30px;
+    line-height: 1.2;
+}
+
+.gallery-cta a {
+    display: inline-block;
+    background-color: #dfb141;
+    color: #0b2240;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: 0.35s ease;
+}
+
+.gallery-cta a:hover {
+    background-color: #ffffff;
+    color: #721c24;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
